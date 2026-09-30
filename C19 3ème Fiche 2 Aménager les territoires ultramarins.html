@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CLYRA — Photos qui claquent</title>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:Arial,Helvetica,sans-serif;background:#0b0b0d;color:#fff;line-height:1.5}
+    header{padding:22px 7%;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #222}
+    .logo{font-size:25px;font-weight:900;letter-spacing:2px}
+    nav a{color:#aaa;text-decoration:none;margin-left:22px;font-size:14px}
+    nav a:hover{color:#fff}
+    .hero{padding:90px 7% 70px;max-width:1050px;margin:auto}
+    .tag{display:inline-block;border:1px solid #333;border-radius:30px;padding:7px 13px;color:#bbb;font-size:12px;margin-bottom:22px}
+    h1{font-size:clamp(44px,8vw,82px);line-height:.95;max-width:850px;letter-spacing:-4px}
+    .accent{color:#8e8e8e}
+    .hero p{max-width:600px;color:#aaa;font-size:18px;margin:28px 0}
+    .btn{display:inline-block;background:#fff;color:#000;text-decoration:none;padding:15px 23px;border-radius:12px;font-weight:800;margin-right:8px}
+    .btn.alt{background:#171719;color:#fff;border:1px solid #333}
+    section{padding:70px 7%;max-width:1050px;margin:auto}
+    .section-title{font-size:34px;margin-bottom:28px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .card{background:#141416;border:1px solid #252527;border-radius:18px;padding:25px}
+    .card h3{font-size:20px;margin-bottom:8px}
+    .card p{color:#aaa;font-size:14px}
+    .price{font-size:30px;font-weight:900;margin:18px 0}
+    .examples{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .example{height:210px;border-radius:18px;background:linear-gradient(135deg,#27272a,#101012);display:flex;align-items:end;padding:18px;font-weight:800}
+    .how{counter-reset:step}
+    .step{display:flex;gap:18px;padding:18px 0;border-bottom:1px solid #222}
+    .num{min-width:36px;height:36px;border-radius:50%;background:#fff;color:#000;display:flex;align-items:center;justify-content:center;font-weight:900}
+    .contact{background:#141416;border:1px solid #252527;border-radius:22px;padding:30px}
+    footer{text-align:center;color:#666;padding:35px 7%;font-size:13px;border-top:1px solid #222}
+    @media(max-width:700px){nav{display:none}.grid,.examples{grid-template-columns:1fr}h1{letter-spacing:-2px}.hero{padding-top:60px}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="logo">CLYRA</div>
+  <nav>
+    <a href="#offres">Offres</a>
+    <a href="#comment">Comment ça marche</a>
+    <a href="#commander">Commander</a>
+  </nav>
+</header>
+
+<main>
+  <div class="hero">
+    <span class="tag">SERVICE DIGITAL • SIMPLE • RAPIDE</span>
+    <h1>Ta photo.<br><span class="accent">En mieux.</span></h1>
+    <p>Une retouche propre et moderne pour tes photos de profil, TikTok, Instagram ou Snap.</p>
+    <a class="btn" href="#commander">Commander</a>
+    <a class="btn alt" href="#offres">Voir les offres</a>
+  </div>
+
+  <section id="offres">
+    <h2 class="section-title">Les offres</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Clean</h3>
+        <p>Lumière, contraste, netteté et petites corrections.</p>
+        <div class="price">3,99 €</div>
+        <a class="btn" href="#commander">Choisir</a>
+      </div>
+      <div class="card">
+        <h3>Profile</h3>
+        <p>Une photo optimisée pour ton profil et tes réseaux.</p>
+        <div class="price">5,99 €</div>
+        <a class="btn" href="#commander">Choisir</a>
+      </div>
+      <div class="card">
+        <h3>Pack</h3>
+        <p>3 photos retouchées avec le même style.</p>
+        <div class="price">9,99 €</div>
+        <a class="btn" href="#commander">Choisir</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Le résultat</h2>
+    <div class="examples">
+      <div class="example">EXEMPLE 01</div>
+      <div class="example">EXEMPLE 02</div>
+      <div class="example">EXEMPLE 03</div>
+    </div>
+    <p style="color:#777;margin-top:12px;font-size:13px">Remplace ces blocs par tes vraies photos avant/après.</p>
+  </section>
+
+  <section id="comment">
+    <h2 class="section-title">Comment ça marche ?</h2>
+    <div class="how">
+      <div class="step"><div class="num">1</div><div><b>Tu choisis une offre</b><br><span style="color:#aaa">Clean, Profile ou Pack.</span></div></div>
+      <div class="step"><div class="num">2</div><div><b>Tu commandes</b><br><span style="color:#aaa">Tu envoies ta photo et tes instructions.</span></div></div>
+      <div class="step"><div class="num">3</div><div><b>On prépare la retouche</b><br><span style="color:#aaa">La photo est améliorée selon ta demande.</span></div></div>
+      <div class="step"><div class="num">4</div><div><b>Tu reçois ton résultat</b><br><span style="color:#aaa">Le fichier final est envoyé en ligne.</span></div></div>
+    </div>
+  </section>
+
+  <section id="commander">
+    <h2 class="section-title">Commander</h2>
+    <div class="contact">
+      <p style="color:#aaa;margin-bottom:20px">Le bouton ci-dessous est un emplacement à remplacer par ton vrai système de commande/paiement.</p>
+      <a class="btn" href="mailto:contact@exemple.fr?subject=Commande%20CLYRA">Passer une commande</a>
+    </div>
+  </section>
+</main>
+
+<footer>© 2026 CLYRA — Tous droits réservés.</footer>
+</body>
+</html>
